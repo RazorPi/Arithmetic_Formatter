@@ -8,7 +8,7 @@ In all fairness, I tried my best to solve the problem with the information I've 
 ## Chat GPT:
 **My Prompt:** Help me understand why this "Arithmetic Arranger" Python code is not passing test number 9. Here is the code to evaluate. Link to [original code]([url](https://github.com/RazorPi/Arithmetic_Formatter/blob/main/original_code.py)) for reference. 
 
-**The answer:**
+## The answer:
 
 ## Possible Issues in Your Code
 ### 1. Use of eval() for calculations
@@ -23,7 +23,7 @@ In all fairness, I tried my best to solve the problem with the information I've 
 
 ### 3. Incorrect Formatting of Output
 
-* The expected format should have each operand aligned properly, but your implementation might not handle all edge cases correctly.\
+* The expected format should have each operand aligned properly, but your implementation might not handle all edge cases correctly.
 
 **Potential Problem:** Handling of spacing and alignment when numbers are shorter or longer. The expected output format should look exactly like this:
 
@@ -48,7 +48,7 @@ In all fairness, I tried my best to solve the problem with the information I've 
 
   <img width="70" alt="Screenshot 2025-01-28 at 3 47 42 PM" src="https://github.com/user-attachments/assets/7e436709-1389-4069-81d3-3a95f3185f14" />
 
-The missing extra space causes misalignment. \
+The missing extra space causes misalignment. 
 
 ### Incorrect Handling of Result Alignment
 
@@ -64,7 +64,7 @@ The missing extra space causes misalignment. \
 
 
 
-# Key Fixes \
+# Key Fixes 
 
 ✅ Replaced eval() with direct arithmetic \
 ✅ Corrected operator validation logic \
