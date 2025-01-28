@@ -6,7 +6,7 @@ This is the first test on the Scientific Computation with Python cert by Free Co
 In all fairness, I tried my best to solve the problem with the information I've acquired in the other courses of this certification. I tried to find answers in the "Help section" [Linked here]([url](https://forum.freecodecamp.org/search?q=Build%20an%20Arithmetic%20Formatter%20Project)). I also tried Google... lots of Google. And after hours of frustration, I asked the forum and got some answers. [Link to the FORUM here]([url](https://forum.freecodecamp.org/t/build-an-arithmetic-formatter-project-build-an-arithmetic-formatter-project/732218)).  All that to say... I did what every developer would do these days: ask Chat GPT. 
 
 ## Chat GPT:
-**My Prompt:** Help me understand why this "Arithmetic Arranger" Python code is not passing test number 9. Here is the code to evaluate. [see original code for reference(/original_code.py:)](/original_code.py:) 
+**My Prompt:** Help me understand why this "Arithmetic Arranger" Python code is not passing test number 9. Here is the code to evaluate. Link to [original code]([url](https://github.com/RazorPi/Arithmetic_Formatter/blob/main/original_code.py)) for reference. 
 
 **The answer:**
 
@@ -17,8 +17,8 @@ In all fairness, I tried my best to solve the problem with the information I've 
 
 ## 2. Incorrect Operator Validation
 
-* Your operator check if set(operations) != {'+', '-'} and len(set(operations)) != 2: is incorrect.
-* It will fail when there is a mix of valid and invalid operators because {'+', '-', '*'} will still have more than one element, leading to unpredictable behavior. \
+* Your operator check **if set(operations) != {'+', '-'}** and **len(set(operations)) != 2:** is incorrect.
+* It will fail when there is a mix of valid and invalid operators because **{'+', '-', '*'}** will still have more than one element, leading to unpredictable behavior. \
 **Fix:** Instead, iterate over operations and check each operator explicitly.
 
 ### 3. Incorrect Formatting of Output
@@ -30,7 +30,7 @@ In all fairness, I tried my best to solve the problem with the information I've 
 <img width="298" alt="Screenshot 2025-01-28 at 3 43 50 PM" src="https://github.com/user-attachments/assets/60f548c7-8835-4239-9db3-c1c40caf658b" />
 
 
-*Your approach may not be aligning numbers correctly, especially for numbers with different lengths.
+* Your approach may not be aligning numbers correctly, especially for numbers with different lengths.
 
 ### 4. Error Message Formatting Differences**
 
@@ -42,12 +42,11 @@ In all fairness, I tried my best to solve the problem with the information I've 
 
 ### In the expected output, the second operand (+ 40) is aligned with an extra space before the number:
 
-  988
-  +40
+<img width="77" alt="Screenshot 2025-01-28 at 3 47 37 PM" src="https://github.com/user-attachments/assets/63c75d34-7782-4760-bd92-e8e5eabfd109" />
 
 * Your function currently does:
-  988
- +40
+
+  <img width="70" alt="Screenshot 2025-01-28 at 3 47 42 PM" src="https://github.com/user-attachments/assets/7e436709-1389-4069-81d3-3a95f3185f14" />
 
 The missing extra space causes misalignment. \
 
@@ -61,11 +60,12 @@ The missing extra space causes misalignment. \
 * Align the results properly under the dashes.
 
 
-[Link to new proposed code (Arithmetic_Formatter/build-an-arithmetic-formatter-project.py]
+[Link to new proposed code ]([url](https://github.com/RazorPi/Arithmetic_Formatter/blob/main/build-an-arithmetic-formatter-project.py))
 
 
 
-# Key Fixes
+# Key Fixes \
+
 ✅ Replaced eval() with direct arithmetic \
 ✅ Corrected operator validation logic \
 ✅ Ensured spacing and formatting are correct \
