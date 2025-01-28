@@ -1,5 +1,5 @@
 # Arithmetic_Formatter
-This is the first test on the Scientific Computaton with Python cert by Free Code Camp.
+This is the first test on the Scientific Computation with Python cert by Free Code Camp.
 
 
 ##NOTE FROM THE AUTHOR:
