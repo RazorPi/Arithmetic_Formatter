@@ -1,3 +1,5 @@
+#This is the final code that PASSED all TESTS. The construct is different from the original; it is a combination of ChatGPT code + research. 
+
 def arithmetic_arranger(problems, show_answers=False):
     if len(problems) > 5:
         return "Error: Too many problems."
