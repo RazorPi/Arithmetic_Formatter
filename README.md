@@ -27,10 +27,8 @@ In all fairness, I tried my best to solve the problem with the information I've 
 
 **Potential Problem:** Handling of spacing and alignment when numbers are shorter or longer. The expected output format should look exactly like this:
 
+<img width="298" alt="Screenshot 2025-01-28 at 3 43 50 PM" src="https://github.com/user-attachments/assets/60f548c7-8835-4239-9db3-c1c40caf658b" />
 
-  32      3801      45      123
-+ 698    -    2    + 43    +  49
------    ------    ----    -----
 
 *Your approach may not be aligning numbers correctly, especially for numbers with different lengths.
 
@@ -45,11 +43,11 @@ In all fairness, I tried my best to solve the problem with the information I've 
 ### In the expected output, the second operand (+ 40) is aligned with an extra space before the number:
 
   988
-+  40
+  +40
 
 * Your function currently does:
   988
-+ 40
+ +40
 
 The missing extra space causes misalignment. \
 
@@ -68,8 +66,8 @@ The missing extra space causes misalignment. \
 
 
 # Key Fixes
-✅ Replaced eval() with direct arithmetic
-✅ Corrected operator validation logic
-✅ Ensured spacing and formatting are correct
-✅ Matched error messages exactly as expected
+✅ Replaced eval() with direct arithmetic \
+✅ Corrected operator validation logic \
+✅ Ensured spacing and formatting are correct \
+✅ Matched error messages exactly as expected \
 
